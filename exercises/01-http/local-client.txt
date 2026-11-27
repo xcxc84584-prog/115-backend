@@ -1,0 +1,62 @@
+﻿* Host localhost:8000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:8000...
+*   Trying 127.0.0.1:8000...
+* Established connection to localhost (127.0.0.1 port 8000) from [redacted client IP] port 10335 
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0* using HTTP/1.x
+> GET / HTTP/1.1
+
+> Host: localhost:8000
+
+> User-Agent: curl/8.21.0
+
+> Accept: */*
+
+> 
+
+* Request completely sent off
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+
+< Server: SimpleHTTP/0.6 Python/3.14.7
+
+< Date: Fri, 27 Nov 2026 05:20:38 GMT
+
+< Content-type: text/html; charset=utf-8
+
+< Content-Length: 362
+
+< 
+
+{ [362 bytes data]
+
+100    362 100    362   0      0   1752      0                              0
+100    362 100    362   0      0   1752      0                              0
+100    362 100    362   0      0   1752      0                              0
+* shutting down connection #0
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+:root {
+color-scheme: light dark;
+}
+</style>
+<title>Directory listing for /</title>
+</head>
+<body>
+<h1>Directory listing for /</h1>
+<hr>
+<ul>
+<li><a href="status-200.txt">status-200.txt</a></li>
+<li><a href="status-404.txt">status-404.txt</a></li>
+</ul>
+<hr>
+</body>
+</html>
+

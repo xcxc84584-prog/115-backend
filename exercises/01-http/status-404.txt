@@ -1,0 +1,50 @@
+﻿* Host httpbin.org:443 was resolved.
+* IPv6: (none)
+* IPv4: 54.172.45.38, 3.221.253.123, 44.209.237.184
+*   Trying 54.172.45.38:443...
+* schannel: disabled automatic use of client certificate
+* ALPN: curl offers http/1.1
+* ALPN: server accepted http/1.1
+* Established connection to httpbin.org (54.172.45.38 port 443) from [redacted client IP] port 10330 
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0* using HTTP/1.x
+> GET /status/404 HTTP/1.1
+
+> Host: httpbin.org
+
+> User-Agent: curl/8.21.0
+
+> Accept: */*
+
+> 
+
+* Request completely sent off
+* schannel: remote party requests renegotiation
+* schannel: renegotiating SSL/TLS connection
+* schannel: SSL/TLS connection renegotiated
+< HTTP/1.1 404 Not Found
+
+< access-control-allow-credentials: true
+
+< access-control-allow-origin: *
+
+< access-control-expose-headers: Retry-After, RateLimit, RateLimit-Policy, WWW-Authenticate
+
+< content-length: 0
+
+< content-type: text/html; charset=utf-8
+
+< x-content-type-options: nosniff
+
+< date: Fri, 27 Nov 2026 05:20:40 GMT
+
+< 
+
+
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+* Connection #0 to host httpbin.org:443 left intact
+
